@@ -68,7 +68,7 @@ const AllCorseList = () => {
                                             <th scope="col" className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">End Time</th>
                                             <th scope="col" className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Start Date</th>
                                             <th scope="col" className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">End Date</th>
-                                            <th scope="col" className="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase">Action</th>
+                                            <th scope="col" className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -80,8 +80,8 @@ const AllCorseList = () => {
                                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">{item?.name.slice(0, 20)}</td>
                                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{item?.level}</td>
                                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{item?.price}</td>
-                                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{item?.schedule?.classNameTime}</td>
-                                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{item?.schedule?.classNameTimeEnd}</td>
+                                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{item?.schedule?.classTime}</td>
+                                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{item?.schedule?.classTimeEnd}</td>
                                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{item?.schedule?.startDate}</td>
                                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{item?.schedule?.endDate}</td>
 
@@ -138,11 +138,11 @@ const AllCorseList = () => {
                                             </div>
                                         </div>
                                         <div className="mb-4">
-                                            <span className="font-bold text-gray-700 dark:text-gray-300">classNameDays:</span>
+                                            <span className="font-bold text-gray-700 dark:text-gray-300">ClassDays:</span>
                                             <div className="flex items-center mt-2">
                                                 {
-                                                    details?.schedule?.classNameDays && <div>
-                                                        {details?.schedule?.classNameDays?.map((item, i) => {
+                                                    details?.schedule?.classDays && <div>
+                                                        {details?.schedule?.classDays?.map((item, i) => {
                                                             return <button key={i} className="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">{item}</button>
                                                         })}
                                                     </div>
@@ -152,8 +152,8 @@ const AllCorseList = () => {
 
                                         <div className="flex mb-4">
                                             <div className="mr-4">
-                                                <span className="font-bold text-gray-700 dark:text-gray-300">classNameTime: </span>
-                                                <span className="text-gray-600 dark:text-gray-300">  {details?.schedule?.classNameTime} - {details?.schedule?.classNameTimeEnd} </span>
+                                                <span className="font-bold text-gray-700 dark:text-gray-300">ClassTime: </span>
+                                                <span className="text-gray-600 dark:text-gray-300">  {details?.schedule?.classTime} - {details?.schedule?.classTimeEnd} </span>
                                             </div>
                                             <div className='mr-4'>
                                                 <span className="font-bold text-gray-700 dark:text-gray-300">Date: </span>

@@ -84,11 +84,11 @@ const CourseList = (props) => {
                                             </div>
                                         </div>
                                         <div className="mb-4">
-                                            <span className="font-bold text-gray-700 dark:text-gray-300">classNameDays:</span>
+                                            <span className="font-bold text-gray-700 dark:text-gray-300">ClassDays:</span>
                                             <div className="flex items-center mt-2">
                                                 {
-                                                    details?.schedule?.classNameDays && <div>
-                                                        {details?.schedule?.classNameDays?.map((item, i) => {
+                                                    details?.schedule?.classDays && <div>
+                                                        {details?.schedule?.classDays?.map((item, i) => {
                                                             return <button key={i} className="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">{item}</button>
                                                         })}
                                                     </div>
@@ -98,8 +98,8 @@ const CourseList = (props) => {
 
                                         <div className="flex mb-4">
                                             <div className="mr-4">
-                                                <span className="font-bold text-gray-700 dark:text-gray-300">classNameTime: </span>
-                                                <span className="text-gray-600 dark:text-gray-300">  {details?.schedule?.classNameTime} - {details?.schedule?.classNameTimeEnd} </span>
+                                                <span className="font-bold text-gray-700 dark:text-gray-300">ClassTime: </span>
+                                                <span className="text-gray-600 dark:text-gray-300">  {details?.schedule?.classTime} - {details?.schedule?.classTimeEnd} </span>
                                             </div>
                                             <div className='mr-4'>
                                                 <span className="font-bold text-gray-700 dark:text-gray-300">Date: </span>
