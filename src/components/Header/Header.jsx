@@ -40,8 +40,8 @@ const Header = () => {
                             <div className="flex flex-col mt-5 gap-y-4 gap-x-0 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-[26.75rem]">
                                 <NavLink to='/' className="font-medium text-blue-600 sm:py-6 dark:text-blue-500" aria-current="page">Home</NavLink>
                                 <NavLink to='https://buj-al-arab-eafb9.web.app/' target='_blank' className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500">Portfolio</NavLink>
-                                <NavLink className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500">Work</NavLink>
-                                <NavLink className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500">Blog</NavLink>
+                                {/* <NavLink className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500">Work</NavLink>
+                                <NavLink className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500">Blog</NavLink> */}
 
                                 {
                                     data?.admin && <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
